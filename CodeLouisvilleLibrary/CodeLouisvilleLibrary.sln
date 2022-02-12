@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeLouisvilleLibrary", "CodeLouisvilleLibrary.csproj", "{4DF8908E-A338-48A7-8DA9-C3E71BE8FDBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DF8908E-A338-48A7-8DA9-C3E71BE8FDBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF8908E-A338-48A7-8DA9-C3E71BE8FDBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF8908E-A338-48A7-8DA9-C3E71BE8FDBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF8908E-A338-48A7-8DA9-C3E71BE8FDBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FF10FB9-6BBE-446F-834D-F682FF9A5691}
+	EndGlobalSection
+EndGlobal
