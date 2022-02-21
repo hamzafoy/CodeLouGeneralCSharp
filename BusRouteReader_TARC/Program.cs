@@ -11,8 +11,15 @@ namespace TARC_BusRouteReader
             BusRoute route17 = new BusRoute(17, "8th Street", "Michael Edwards Dr");
             BusRoute route29 = new BusRoute(29, "Cane Run Rd", "Oxmoor Center");
 
-            Console.WriteLine(route17);
-            Console.WriteLine(route29);
+            BusRoute[] routes =
+            {
+                route17, route29
+            };
+
+            foreach (BusRoute route in routes)
+            {
+                Console.WriteLine(route);
+            }
         }
     }
 }
