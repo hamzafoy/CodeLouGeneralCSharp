@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using TARC_BusRouteReader_BusRouteClass;
+using TARC_BusRouteReader_RouteRepository;
 
 namespace TARC_BusRouteReader
 {
@@ -8,14 +9,10 @@ namespace TARC_BusRouteReader
     {
         static void Main(string[] args)
         {
-            BusRoute[] routes =
-            {
-                new BusRoute(17, "8th Street", "Michael Edwards Dr"), new BusRoute(29, "Cane Run Rd", "Oxmoor Center"), new BusRoute(25, "Shawnee Park", "Accomack Dr"), new BusRoute(63, "Terry Rd", "4th St")
-            };
-
             Console.WriteLine("What location would you like to search to see if there is a bus route?");
-            BusRoute search = FindBusTo(routes, Console.ReadLine());
-            Console.WriteLine((search == null) ? $"That location has no bus route" : $"{search}");
+            string location = Console.ReadLine();
+            BusRoute search = FindBusTo(BusDepot.tarcRoutes, location);
+            Console.WriteLine((search == null) ? $"{location} has no bus route." : $"{search}");
         }
 
         public static BusRoute FindBusTo(BusRoute[] routeList, string location)
