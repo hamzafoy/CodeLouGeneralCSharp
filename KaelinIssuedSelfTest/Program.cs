@@ -15,6 +15,7 @@ namespace CodeLouisvilleSelfTest
             Console.WriteLine(computerProgrammer.DoWork(2));
             Console.WriteLine("Value Types are those types who directly contain a value, ex: Int32, Boolean");
             Console.WriteLine("Reference Types are those types which point to something else with value without actually containing said value");
+            Console.WriteLine("Examples of reference types include Arrays & Strings");
         }
     }
 }
