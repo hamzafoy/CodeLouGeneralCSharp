@@ -29,7 +29,20 @@ namespace TARC_BusRouteReader_RouteRepository
 
         public static Dictionary<int, BusRoute> TarcRoutesDictionary()
         {
+            BusRoute route17 = new BusRoute(17, stops: new string[] { "N 8th St", "Liberty St", "Grinstead Dr", "Douglass Blvd", "Bashford Manor Ln", "S Hurstbourne Pkwy", "Glenmary Farms" });
+            BusRoute route29 = new BusRoute(29, stops: new string[] { "Cane Run Rd", "7th Street Rd", "Taylor Blvd", "Winkler Ave", "Eastern Pkwy", "Bardstown Rd", "Shelbyville Rd", "Oxmoor Center" });
+            var busRoutes = new Dictionary<int, BusRoute>();
+            busRoutes.Add(17, route17);
+            busRoutes.Add(29, route29);
+            return busRoutes;
 
+            //Shortened, inline version of Dictionary instantiating:
+            //var routes = new Dictionary<int, BusRoute>
+            //{
+            //    { 17, route17 },
+            //    { 29, route29 }
+            //};
+            //return routes;
         }
     }
 }
