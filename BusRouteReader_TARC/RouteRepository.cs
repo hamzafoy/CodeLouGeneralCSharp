@@ -26,5 +26,10 @@ namespace TARC_BusRouteReader_RouteRepository
             busStops.Add(new BusRoute(29, stops: new string[] { "Cane Run Rd", "7th Street Rd", "Taylor Blvd", "Winkler Ave", "Eastern Pkwy", "Bardstown Rd", "Shelbyville Rd", "Oxmoor Center" }));
             return busStops;
         }
+
+        public static Dictionary<int, BusRoute> TarcRoutesDictionary()
+        {
+
+        }
     }
 }
